@@ -8,6 +8,7 @@
 	include('conn.php');
 	$query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
 	$row=mysqli_fetch_assoc($query);
+	
 ?>
 <!DOCTYPE html>
 <html>
