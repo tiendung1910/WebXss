@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","cookie","","cookie_db");
+$conn = mysqli_connect("localhost","user1","user1","cookie_db");
  
 // Check connection
 if (mysqli_connect_errno())

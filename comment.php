@@ -31,12 +31,12 @@
         <br>
         <input type="submit" value="submit" name="submit">
     </form>
-
+    <br>
     <?php
         if (mysqli_num_rows($result2) > 0) {
             // output data of each row
             while($row = mysqli_fetch_assoc($result2)) {
-                echo "Name: " . $row["name"]. "\n". "Comment: " . $row["comment"]. "<br>";
+                echo "Name: " . $row["name"]. "<br>". "Comment: " . $row["comment"]. "<hr>";
                 
             }
         }else{
